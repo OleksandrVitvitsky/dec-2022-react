@@ -1,5 +1,5 @@
 import React from 'react';
-import './SimpsonPerson.css';
+import '../Person.css';
 
 const SimpsonPerson = ({item}) => {
     return (

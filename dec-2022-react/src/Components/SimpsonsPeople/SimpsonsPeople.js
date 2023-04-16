@@ -1,7 +1,7 @@
 import React from 'react';
 import {simpsons} from "../Arrays";
 import SimpsonPerson from "../SimpsonPerson/SimpsonPerson";
-import './SimpsonsPeople.css';
+import '../People.css';
 const SimpsonsPeople = () => {
 
     return (

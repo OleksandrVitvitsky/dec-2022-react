@@ -1,0 +1,21 @@
+.Person, .Hero{
+    width: 80%;
+    border: 1.5px solid black;
+    text-align: center;
+}
+.Hero{
+    display: flex;
+    justify-content: space-evenly;
+    width: 49%;
+}
+.Hero_Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    border: 1px black solid;
+}

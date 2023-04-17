@@ -1,26 +1,22 @@
 
 
 
-// TASK #1
-// 1. Описати всю сім'ю сімпсонів (5 персонажів)
+// TASK #2
+// з jsonplaceholder отримати всі пости в компоненту Posts.js
+// відобразити кожного інформацію (id,title) з кожного поста (компонента Post)
+// Зробити кнопку вибора поста, при натисканні на яку в Posts.js ви покажете детальну інфомацію про пост(всю інфу)
 //
-// 2. Створити компонент який описує персонажа (властивості id,name,status,species,gender,image) з цього апі
-// https://rickandmortyapi.com/
-// https://rickandmortyapi.com/api/character
-// Створити 6 персонажів
 
-import './App.css';
-import SimpsonsPeople from "./Components/SimpsonsPeople/SimpsonsPeople";
-import Heroes from "./Components/Heroes/Heroes";
 
+
+
+import Posts from "./Components/Posts/Posts";
 
 function App() {
   return (
       <div>
           <div className="app-main">
-              <SimpsonsPeople/>
-              <hr/>
-              <Heroes/>
+              <Posts/>
           </div>
       </div>
   );

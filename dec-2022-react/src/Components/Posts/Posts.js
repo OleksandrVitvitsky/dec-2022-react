@@ -4,6 +4,11 @@ import PostDetail from "../PostDetail/PostDetail";
 import "./Posts.css";
 const Posts = () => {
 
+    let [onClickPost, setOnClickPost] = useState(null);
+    const lifting = (obj) => {
+        setOnClickPost({...obj});
+    }
+
     let [posts, setPosts ] = useState([]);
 
     useEffect(() => {
@@ -11,14 +16,12 @@ const Posts = () => {
             .then(value => value.json())
             .then(allPosts => {
                 setPosts(allPosts);
-
+                console.log(allPosts);
             });
     }, []);
 
-    let [onClickPost, setOnClickPost] = useState(null);
-    const lifting = (obj) => {
-        setOnClickPost({...obj});
-    }
+
+
     return (
         <div className={'mainContainer'}>
             <div className={'posts'}>

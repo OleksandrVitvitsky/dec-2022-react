@@ -5,17 +5,17 @@ const Post = (value, lift) => {
     return (
         <div>
             {
-                <pre>
-                    post id: {value.id}
-                    {/*userId: {value.userId}*/}
-                    title: {value.title}
-                    {/*body: {value.body}*/}
+                <p>
+                    post id: {value.id} <br/>
+
+                    title: {value.title} <br/>
+
                     <button onClick={() => {
                         lift(value);
                     }}>read more
                     </button>
 
-                </pre>
+                </p>
             }
         </div>
     );

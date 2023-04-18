@@ -1,22 +1,13 @@
 import React from 'react';
+import './post.css';
 
-const Post = (value, lift) => {
+const Post = ({value, lift}) => {
 
     return (
-        <div>
-            {
-                <p>
-                    post id: {value.id} <br/>
-
-                    title: {value.title} <br/>
-
-                    <button onClick={() => {
-                        lift(value);
-                    }}>read more
-                    </button>
-
-                </p>
-            }
+        <div className={'post'}>
+            <div> post id: {value.id}</div>
+             <div> title: {value.title} </div>
+              <button onClick={() => {lift(value)}}>read more </button>
         </div>
     );
 };

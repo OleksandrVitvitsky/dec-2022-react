@@ -16,7 +16,7 @@ const Posts = () => {
             .then(value => value.json())
             .then(allPosts => {
                 setPosts(allPosts);
-                console.log(allPosts);
+
             });
     }, []);
 
@@ -25,15 +25,10 @@ const Posts = () => {
     return (
         <div className={'mainContainer'}>
             <div className={'posts'}>
-                {
-                    posts.map(value =>
-                        <Post
-                            value={value}
-                            lift={lifting}
-                            key={value.id}/>
-                    )
-                }
+                {/*{posts.map(post => <Post key={post.id} post={post}/>)}*/}
+                {posts.map(value=> <Post value={value} lift={lifting} key={value.id}/>)}
             </div>
+
             {
                 onClickPost
                 &&
